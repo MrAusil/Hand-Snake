@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.idea/
+.vscode/
+.env
+*.log
+
+# Local player data (per-machine, not shared).
+# The high score and settings are intentionally NOT tracked: they are
+# personal state, and committing them would overwrite other players' records.
+data/highscore.json
+data/settings.json

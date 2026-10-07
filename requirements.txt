@@ -1,0 +1,11 @@
+# HAND SNAKE - runtime dependencies
+# Tested with Python 3.11 / 3.12.
+#
+# mediapipe is pinned below 0.10.22 because HAND SNAKE uses the stable
+# `mediapipe.solutions.hands` API, which newer releases no longer ship.
+# mediapipe 0.10.x needs numpy < 2, and opencv-python >= 4.12 needs numpy >= 2,
+# so OpenCV is capped as well to keep the three packages compatible.
+pygame>=2.5,<3
+opencv-python>=4.8,<4.12
+mediapipe>=0.10.14,<0.10.22
+numpy>=1.26,<2
